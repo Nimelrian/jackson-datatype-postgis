@@ -80,7 +80,6 @@ internal class PointParserTest : DescribeSpec({
                       ]
                     }
                 """.trimIndent()
-                println(point)
                 val json = mapper.writeValueAsString(point)
                 json shouldEqualJson expectedJson
             }
